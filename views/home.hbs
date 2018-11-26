@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{{ pageTitle }}</title>
+</head>
+<body>
+    <!-- <h1>{{ pageTitle }}</h1> -->
+    {{> header}}
+    <!-- screamIt is a helper that we have created in the server.js file. It converts the text into Upper case text.
+         It takes one argument(It can take more than one argument). The argument for helpers are declared by giving space and then the argument
+         For example, here screamIt takes one arg and that arg is name which is written after space and screamIt for another arg give space after 1st and then again call that arg name -->
+    <p>Welcome {{ screamIt name }}</p>
+
+<!-- Following is the syntax which allows us to add partials. Partials are nothing but partial code of whole page which can be written in a separate 
+     file and which can be declared wherever required. It is mostly used when repeated code is present in various pages -->
+    {{> footer }}
+</body>
+</html>
