@@ -6,6 +6,8 @@ const hbs = require('hbs');
 // File Handling Library
 const fs = require('fs');
 
+const port = process.env.PORT || 3000;
+
 // Express is the framework which is helpful and mostly used for writing server side code in nodejs.
 // Express has all http related req and response methods which are used for creating web application in NodeJS
 var app = express();
@@ -92,6 +94,6 @@ app.get('/bad', (req, res) => {
 
 // This will tell the app ie express to listen to port 3000 and response according to the url requested.
 // It also has an optional second argument which is a function that runs while server is starting.
-app.listen(3000, () => {
-    console.log('Server is up on port 3000');
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
 });
