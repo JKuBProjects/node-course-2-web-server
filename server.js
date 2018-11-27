@@ -86,6 +86,14 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    // res.send('About Page!');
+    // With following we are directly rendering the page easily so that when this url or route is called in the browser this page will get loaded or rendered
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Unable to process the request!'

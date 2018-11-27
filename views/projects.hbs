@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{{ pageTitle }}</title>
+</head>
+<body>
+    <!-- <h1>{{ pageTitle }}</h1> -->
+    {{> header}}
+    <p>Projects page text here!</p>
+
+<!-- Following is the syntax which allows us to add partials. Partials are nothing but partial code of whole page which can be written in a separate 
+     file and which can be declared wherever required. It is mostly used when repeated code is present in various pages -->
+    {{> footer}}
+</body>
+</html>
